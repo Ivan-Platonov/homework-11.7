@@ -1,0 +1,179 @@
+.ourWork {
+    margin-top: 103px;
+    margin-bottom: -20px;
+}
+
+.ourWork__title {
+    margin-left: -2px;
+}
+
+.workNav__list {
+    display: flex;
+    margin-top: 54px;
+    margin-left: -4px;
+}
+
+.workNav__item {
+    margin-right: 77px;
+}
+
+.workNav__link {
+    transition: color .3s ease;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.workNav__link:hover,
+.workNav__link:focus {
+    color: #f90;
+}
+
+.workNav__link:active {
+    color: #E1670E;
+}
+
+.workNav__item:first-child>.workNav__link {
+    color: #f90;
+}
+
+.workContent__consult {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 49px;
+    transition: opacity 1s ease;
+}
+
+.workContent__contentTitle {
+    margin-top: 2px;
+    font-size: 24px;
+}
+
+.workContent__content {
+    flex-basis: 43%;
+    margin-left: 2px;
+}
+
+.workContent__describe {
+    margin-top: 7px;
+    line-height: 2em;
+}
+
+.workContent__consult-hidden {
+    line-height: 1em;
+}
+
+.workContent__more {
+    position: relative;
+    top: -5.6vh;
+}
+
+.workContent__moreLink,
+.workContent__contract {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 175px;
+    height: 59px;
+    margin: 0 23px 0 2px;
+    transition: background-color .3s ease, color .3s ease;
+    color: white;
+    /* border: 3px solid #f90; */
+}
+
+.workContent__moreLink {
+    background-color: #f90;
+}
+
+.workContent__moreLink:hover,
+.workContent__moreLink:focus {
+    background-color: rgba(255, 153, 0, 0.6);
+}
+
+.workContent__moreLink:active {
+    background-color: #E1670E;
+}
+
+.workContent__contract {
+    width: 150px;
+    color: #333;
+    border: 1px solid #333;
+    font-weight: normal;
+}
+
+.workContent__contract:hover,
+.workContent__contract:focus {
+    color: white;
+    background-color: #666;
+}
+
+.workContent__contract:active {
+    background-color: black;
+}
+
+.workContent__img {
+    display: block;
+    width: 45.24vw;
+    margin: 10px -2px 0 0;
+    object-fit: cover;
+}
+
+.workContent__img-mobile {
+    display: none;
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .ourWork {
+        margin-top: 61px;
+    }
+    .workContent__img {
+        display: none;
+    }
+    .workContent__img-mobile {
+        display: block;
+        width: 438px;
+        height: 689px;
+        margin-top: 10px;
+    }
+    .workContent__content {
+        flex-basis: 47.3%;
+    }
+    .ourWork__title {
+        margin-left: -6px;
+    }
+    .ourWork__stepLine {
+        overflow: hidden;
+        width: 469px;
+        height: 3px;
+        margin-top: 38px;
+        background-color: #cacaca;
+    }
+    .ourWork__stepLineProgress {
+        width: 469px;
+        height: 3px;
+        transform: translateX(-422px);
+        background-color: #f90;
+    }
+    .workNav__list {
+        margin-top: 10px;
+    }
+    .workNav__item {
+        margin-right: 89px;
+    }
+    .workContent__consult {
+        margin-top: 48px;
+    }
+    .workContent__contentTitle {
+        letter-spacing: -.01em;
+    }
+    .workContent__describe {
+        margin-top: 6px;
+    }
+    .workContent__moreLink,
+    .workContent__contract {
+        height: 60px;
+        margin: 29px 26px 0 0;
+    }
+    .workContent__contract {
+        width: 147px;
+    }
+}

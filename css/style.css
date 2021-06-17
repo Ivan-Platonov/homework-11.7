@@ -1,0 +1,34 @@
+.btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-weight: 700;
+}
+
+.input {
+    padding-left: 5px;
+    color: rgb(51, 51, 51);
+    border: none;
+    outline: none;
+}
+
+hr {
+    color: #cacaca;
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    *:focus {
+        outline: none;
+    }
+    .container {
+        width: 95%;
+        max-width: 924px;
+    }
+}
+
+@media (max-width:1919px) {
+    .container {
+        width: 95%;
+    }
+}

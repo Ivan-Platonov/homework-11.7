@@ -1,0 +1,111 @@
+.hero {
+    height: 620px;
+    padding-left: 78px;
+    color: white;
+    background: url('/img/heroBackground_full.jpg') no-repeat;
+}
+
+.hero__title {
+    max-width: 50%;
+    margin: 0;
+    padding-top: 103px;
+    letter-spacing: .035em;
+    font-size: 67px;
+    font-weight: 800;
+    line-height: 86px;
+}
+
+.hero__describe {
+    max-width: 50%;
+    margin-top: 20px;
+    letter-spacing: -.014em;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+}
+
+.hero__button {
+    width: 280px;
+    height: 80px;
+    margin-top: 96px;
+    margin-left: 2px;
+    transition: background-color .3s ease;
+    letter-spacing: 0.02em;
+    color: white;
+    background-color: #f90;
+    font-size: 22px;
+}
+
+.hero__button:hover,
+.hero__button:focus {
+    background-color: rgba(255, 153, 0, 0.6);
+}
+
+.hero__button:active {
+    background-color: #E1670E;
+}
+
+@media (min-width:1025px) and (max-width:1919px) {
+    .hero__title {
+        max-width: 90%;
+        font-size: 65px;
+    }
+    .hero__button {
+        margin-top: 70px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .hero {
+        height: 668px;
+        padding-left: 42px;
+        background-image: url("/img/heroBackgroundMobile.jpg");
+        background-position-y: bottom;
+    }
+    .hero__title {
+        max-width: 80%;
+        padding: 160px 0 0 3px;
+        letter-spacing: normal;
+        font-size: 60px;
+        line-height: normal;
+    }
+    .hero__describe {
+        max-width: 80%;
+        margin-top: 10px;
+        padding-left: 3px;
+        letter-spacing: -.01em;
+        font-size: 20px;
+        line-height: normal;
+    }
+    .hero__button {
+        width: 287px;
+        margin-top: 110px;
+        letter-spacing: .04em;
+        font-size: 22px;
+    }
+    .hero__carouselDots {
+        display: flex;
+        justify-content: center;
+        margin: 69px 0 0 -21px;
+    }
+    .carouselDots__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .carouselDots__item {
+        margin-right: 20px;
+    }
+    .carouselDots__link {
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    .carouselDots__link:focus {
+        border: solid 1px white;
+    }
+    .carouselDots__item:first-child .carouselDots__link {
+        background-color: white;
+    }
+}
