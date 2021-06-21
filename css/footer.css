@@ -1,6 +1,6 @@
 .footer {
     position: relative;
-    padding-top: 50px;
+    padding-top: 49px;
     color: #CACACA;
     background-color: #333;
 }
@@ -23,16 +23,34 @@
     display: none;
 }
 
-.footerAbout__logo:hover,
-.footerAbout__logo:focus {
-    filter: drop-shadow(0 0 3px rgba(255, 153, 0, 0.6));
+.footer__footerMenu {
+    flex-basis: 30%;
 }
 
-.footerAbout__describe {
-    width: 68%;
-    margin-top: 78px;
-    margin-left: auto;
-    line-height: 2em;
+.footerMenu__list {
+    margin-top: 18px;
+}
+
+.footerMenu__item {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.footerMenu__itemLink {
+    transition: color .3s ease;
+    letter-spacing: -.01em;
+    color: #cacaca;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footerMenu__itemLink:hover,
+.footerMenu__itemLink:focus {
+    color: #f90;
+}
+
+.footerMenu__itemLinkMobile {
+    display: none;
 }
 
 .footerAbout__socialList {
@@ -80,7 +98,7 @@
 
 .footer__sendLetter {
     flex-basis: 32.5%;
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .sendLetter__title {
@@ -90,12 +108,11 @@
 .footer__footerForm {
     display: flex;
     flex-direction: column;
-    margin-top: 3px;
 }
 
 .footerForm__input {
     height: 60px;
-    margin-top: 25px;
+    margin-top: 26px;
     padding: 20px;
     color: #cacaca;
     background-color: #414141;
@@ -124,11 +141,13 @@
     width: 269px;
     height: 59px;
     margin-right: 22px;
+    cursor: pointer;
     transition: background-color .3s ease;
     letter-spacing: -.05em;
     color: white;
     background-color: #f90;
     font-size: 17px;
+    font-weight: bold;
 }
 
 .footerForm__btn:hover,
@@ -175,33 +194,11 @@
     background-image: url("/img/gdpr.svg");
 }
 
-.footer__footerMenu {
-    flex-basis: 30%;
-}
-
-.footerMenu__list {
-    margin-top: 18px;
-}
-
-.footerMenu__item {
-    position: relative;
-    margin-bottom: 18px;
-}
-
-.footerMenu__itemLink {
-    transition: color .3s ease;
-    color: #cacaca;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.footerMenu__itemLink:hover,
-.footerMenu__itemLink:focus {
-    color: #f90;
-}
-
-.footerMenu__itemLinkMobile {
-    display: none;
+.footerAbout__describe {
+    width: 68%;
+    margin-top: 78px;
+    margin-left: auto;
+    line-height: 2em;
 }
 
 @media (min-width:1025px) and (max-width:1919px) {
@@ -211,6 +208,9 @@
     .footerAbout__describe {
         margin-top: 20px;
         line-height: 1.5em;
+    }
+    .footerMenu__list {
+        margin: 150px 0 0 5vw;
     }
 }
 

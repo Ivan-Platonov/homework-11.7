@@ -1,9 +1,24 @@
+* {
+    padding: 0;
+}
+
+html,
+body {
+    color: #333;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 94%;
+    max-width: 1770px;
+    margin: 0 auto;
+}
+
 .btn {
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
-    font-weight: 700;
 }
 
 .input {
@@ -24,11 +39,5 @@ hr {
     .container {
         width: 95%;
         max-width: 924px;
-    }
-}
-
-@media (max-width:1919px) {
-    .container {
-        width: 95%;
     }
 }

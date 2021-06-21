@@ -17,13 +17,13 @@ body {
     /* сброс всех внешних отступов в 0 */
     background-color: #f9f9f9;
     /* дефолтный бэк под проект */
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-family: "", Arial, sans-serif;
     /* дефолтный шрифт проекта плюс заменители*/
     font-size: 16px;
     /* дефолтный размер текста */
     font-weight: 400;
     /* дефолтная толщина шрифта */
-    color: #333;
+    color: black;
     /* дефолтный цвет текста */
     line-height: 1;
     /* дефолтная высота строки */
@@ -70,7 +70,7 @@ ol {
 /* container */
 
 .container {
-    max-width: 1770px;
+    max-width: 1080px;
     /*задаем ширину контейнера под проект*/
     margin: 0 auto;
     /* центрирование по горизонтали */
@@ -79,7 +79,6 @@ ol {
     padding: 0 30px; // 30 с двух сторон = 60 прибавили к max-width
     max-width: 1140px; 
     */
-    width: 100%;
 }
 
 .visually-hidden {

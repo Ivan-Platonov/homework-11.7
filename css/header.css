@@ -21,11 +21,6 @@
     transition: filter .3s ease;
 }
 
-.header__logo:hover,
-.header__logo:focus {
-    filter: drop-shadow(0 0 3px rgba(255, 153, 0, 0.6));
-}
-
 .header__nav {
     display: flex;
     align-items: center;
@@ -43,8 +38,9 @@
     display: inline-block;
     height: 40px;
     transition: background-position .2s ease-out;
+    letter-spacing: .02em;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: normal;
     line-height: 40px;
 }
 

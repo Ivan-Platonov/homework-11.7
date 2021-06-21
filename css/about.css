@@ -18,7 +18,7 @@
     height: 16px;
     margin: -2px 0 0 5px;
     vertical-align: middle;
-    background: url('/img/i_tooltip.svg') no-repeat;
+    background: url('../img/i_tooltip.svg') no-repeat;
     background-size: contain;
 }
 
@@ -31,8 +31,12 @@
     position: relative;
     overflow: hidden;
     flex-basis: 49.2%;
-    height: 625px;
+    height: 623px;
     margin-right: 30px;
+}
+
+.aboutLinkBlock {
+    background: url('../img/aboutMoreBackgroundMobile.jpg') -13px 0px/103% no-repeat;
 }
 
 .aboutLinkBlock__img {
@@ -43,7 +47,7 @@
 
 .aboutLinkBlock__describeBox {
     position: absolute;
-    bottom: 3px;
+    bottom: 1px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -97,13 +101,13 @@
 
 .cardItem:first-child {
     margin-bottom: 30px;
-    background: url('/img/aboutIcon-1.svg') no-repeat;
+    background: url('../img/aboutIcon-1.svg') no-repeat;
     background-position: 3.2vw 60px;
 }
 
 .cardItem:last-child {
     padding-top: 6px;
-    background: url('/img/aboutIcon-2.svg') no-repeat;
+    background: url('../img/aboutIcon-2.svg') no-repeat;
     background-position: 3.2vw 56px;
 }
 
@@ -194,7 +198,7 @@
     }
     .cardItem:last-child {
         padding-top: 0;
-        background: url('/img/aboutIcon-2_Mobile02.svg') 162px 62px no-repeat, url('/img/aboutIcon-2_Mobile01.svg') 111px 95px no-repeat;
+        background: url('../img/aboutIcon-2_Mobile02.svg') 162px 62px no-repeat, url('../img/aboutIcon-2_Mobile01.svg') 111px 95px no-repeat;
     }
     .cardItem__title {
         letter-spacing: -.012em;

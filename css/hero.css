@@ -9,9 +9,9 @@
     max-width: 50%;
     margin: 0;
     padding-top: 103px;
-    letter-spacing: .035em;
+    letter-spacing: .047em;
     font-size: 67px;
-    font-weight: 800;
+    font-weight: bold;
     line-height: 86px;
 }
 
@@ -34,6 +34,7 @@
     color: white;
     background-color: #f90;
     font-size: 22px;
+    font-weight: bold;
 }
 
 .hero__button:hover,

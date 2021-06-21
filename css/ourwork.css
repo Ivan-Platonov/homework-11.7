@@ -1,5 +1,5 @@
 .ourWork {
-    margin-top: 103px;
+    margin-top: 105px;
     margin-bottom: -20px;
 }
 
@@ -9,18 +9,16 @@
 
 .workNav__list {
     display: flex;
-    margin-top: 54px;
-    margin-left: -4px;
+    margin-top: 56px;
 }
 
 .workNav__item {
-    margin-right: 77px;
+    margin-right: 90px;
 }
 
 .workNav__link {
     transition: color .3s ease;
     font-size: 18px;
-    font-weight: 400;
 }
 
 .workNav__link:hover,
@@ -49,8 +47,30 @@
 }
 
 .workContent__content {
-    flex-basis: 43%;
+    flex-basis: 77%;
     margin-left: 2px;
+}
+
+.workContent__consult::after {
+    content: '';
+    width: 100%;
+    height: 30.2rem;
+}
+
+.workContent__consult_backimg_firstSlide::after {
+    background: url('../img/ourWork.jpg') right no-repeat;
+}
+
+.workContent__consult_backimg_secondSlide::after {
+    background: url('../img/ourWork_02.jpg') right no-repeat;
+}
+
+.workContent__consult_backimg_thirdSlide::after {
+    background: url('../img/ourWork_03.jpg') right no-repeat;
+}
+
+.workContent__consult_backimg_fourthSlide::after {
+    background: url('../img/ourWork_04.jpg') right no-repeat;
 }
 
 .workContent__describe {
@@ -63,8 +83,7 @@
 }
 
 .workContent__more {
-    position: relative;
-    top: -5.6vh;
+    margin-top: -4.4rem;
 }
 
 .workContent__moreLink,
@@ -78,6 +97,7 @@
     transition: background-color .3s ease, color .3s ease;
     color: white;
     /* border: 3px solid #f90; */
+    font-weight: bold;
 }
 
 .workContent__moreLink {
@@ -107,7 +127,7 @@
 }
 
 .workContent__contract:active {
-    background-color: black;
+    background-color: #000;
 }
 
 .workContent__img {
@@ -128,14 +148,20 @@
     .workContent__img {
         display: none;
     }
-    .workContent__img-mobile {
-        display: block;
-        width: 438px;
-        height: 689px;
-        margin-top: 10px;
-    }
     .workContent__content {
         flex-basis: 47.3%;
+    }
+    .workContent__consult_backimg_firstSlide::after {
+        background: url('../img/ourWorkMobile.jpg') right no-repeat;
+    }
+    .workContent__consult_backimg_secondSlide::after {
+        background: url('../img/ourWorkMobile.jpg') right no-repeat;
+    }
+    .workContent__consult_backimg_thirdSlide::after {
+        background: url('../img/ourWorkMobile.jpg') right no-repeat;
+    }
+    .workContent__consult_backimg_fourthSlide::after {
+        background: url('../img/ourWorkMobile.jpg') right no-repeat;
     }
     .ourWork__title {
         margin-left: -6px;
