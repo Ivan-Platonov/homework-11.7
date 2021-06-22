@@ -37,6 +37,7 @@
 
 .aboutLinkBlock {
     background: url('../img/aboutMoreBackgroundMobile.jpg') -13px 0px/103% no-repeat;
+    background-size: cover;
 }
 
 .aboutLinkBlock__img {
