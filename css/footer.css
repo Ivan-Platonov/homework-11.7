@@ -76,15 +76,15 @@
 }
 
 .footerAbout__socialFB {
-    background: url('/img/fb.svg') no-repeat;
+    background: url('../img/fb.svg') no-repeat;
 }
 
 .footerAbout__socialVK {
-    background: url('/img/vk.svg') no-repeat;
+    background: url('../img/vk.svg') no-repeat;
 }
 
 .footerAbout__socialINST {
-    background: url('/img/inst.svg') no-repeat;
+    background: url('../img/inst.svg') no-repeat;
 }
 
 .footerAbout__socialFB:hover,
@@ -191,7 +191,7 @@
 }
 
 .footerForm input[type=checkbox]:checked+label::before {
-    background-image: url("/img/gdpr.svg");
+    background-image: url("../img/gdpr.svg");
 }
 
 .footerAbout__describe {

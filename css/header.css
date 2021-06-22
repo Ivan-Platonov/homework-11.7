@@ -46,7 +46,7 @@
 
 .nav__itemLink:hover,
 .nav__itemLink:focus {
-    background: url('/img/linkHover.svg') repeat-x;
+    background: url('../img/linkHover.svg') repeat-x;
     background-position: 0 35px;
 }
 
@@ -60,18 +60,18 @@
     height: 40px;
     margin-right: 5px;
     transition: background-image .1s ease;
-    background: url('/img/Search.svg') no-repeat;
+    background: url('../img/Search.svg') no-repeat;
     background-position: center;
     background-size: 25px;
 }
 
 .header__searchButton:hover,
 .header__searchButton:focus {
-    background-image: url('/img/SearchHover.svg');
+    background-image: url('../img/SearchHover.svg');
 }
 
 .header__searchButton:active {
-    background-image: url('/img/SearchActive.svg');
+    background-image: url('../img/SearchActive.svg');
 }
 
 .nav__burger {
@@ -79,12 +79,12 @@
     width: 30px;
     height: 23px;
     transition: background .3s ease;
-    background: url('/img/burger_line.svg') center top no-repeat, url('/img/burger_line.svg') center center no-repeat, url('img/burger_line.svg') center bottom no-repeat;
+    background: url('../img/burger_line.svg') center top no-repeat, url('../img/burger_line.svg') center center no-repeat, url('../img/burger_line.svg') center bottom no-repeat;
 }
 
 .nav__burger:hover,
 .nav__burger:focus {
-    background: url('/img/burger_line_hover.svg') center top no-repeat, url('/img/burger_line_hover.svg') 5px center no-repeat, url('img/burger_line_hover.svg') 10px bottom no-repeat;
+    background: url('../img/burger_line_hover.svg') center top no-repeat, url('../img/burger_line_hover.svg') 5px center no-repeat, url('../img/burger_line_hover.svg') 10px bottom no-repeat;
 }
 
 @media (min-width:1025px) and (max-width:1919px) {

@@ -2,7 +2,7 @@
     height: 620px;
     padding-left: 78px;
     color: white;
-    background: url('/img/heroBackground_full.jpg') no-repeat;
+    background: url('../img/heroBackground_full.jpg') no-repeat;
 }
 
 .hero__title {
@@ -60,7 +60,7 @@
     .hero {
         height: 668px;
         padding-left: 42px;
-        background-image: url("/img/heroBackgroundMobile.jpg");
+        background-image: url("../img/heroBackgroundMobile.jpg");
         background-position-y: bottom;
     }
     .hero__title {
