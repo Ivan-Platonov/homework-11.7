@@ -60,8 +60,9 @@
 
 .aboutLinkBlock__describe {
     flex-basis: 67%;
+    letter-spacing: .01em;
     color: #FFFFFF;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 2em;
 }
 
@@ -75,6 +76,7 @@
     transition: background-color .3s ease;
     color: white;
     border: 3px solid #f90;
+    font-weight: 700;
 }
 
 .aboutLinkBlock__link:hover,
@@ -113,8 +115,9 @@
 }
 
 .cardItem__firstSentence {
+    letter-spacing: .01em;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .cardItem__describe {

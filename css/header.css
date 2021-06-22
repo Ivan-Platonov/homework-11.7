@@ -38,9 +38,9 @@
     display: inline-block;
     height: 40px;
     transition: background-position .2s ease-out;
-    letter-spacing: .02em;
+    letter-spacing: -.02em;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: 600;
     line-height: 40px;
 }
 

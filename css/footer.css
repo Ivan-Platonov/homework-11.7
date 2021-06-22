@@ -41,7 +41,7 @@
     letter-spacing: -.01em;
     color: #cacaca;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .footerMenu__itemLink:hover,
@@ -131,7 +131,7 @@
 
 .footerForm__submitBlock {
     display: flex;
-    margin: 33px 0 0 3px;
+    margin: 31px 0 0 3px;
 }
 
 .footerForm__btn {
@@ -147,7 +147,7 @@
     color: white;
     background-color: #f90;
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .footerForm__btn:hover,

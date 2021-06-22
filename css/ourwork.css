@@ -44,6 +44,7 @@
 .workContent__contentTitle {
     margin-top: 2px;
     font-size: 24px;
+    letter-spacing: .01em;
 }
 
 .workContent__content {
@@ -97,7 +98,7 @@
     transition: background-color .3s ease, color .3s ease;
     color: white;
     /* border: 3px solid #f90; */
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .workContent__moreLink {

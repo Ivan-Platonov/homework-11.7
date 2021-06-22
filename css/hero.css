@@ -9,18 +9,18 @@
     max-width: 50%;
     margin: 0;
     padding-top: 103px;
-    letter-spacing: .047em;
+    letter-spacing: .036em;
     font-size: 67px;
-    font-weight: bold;
+    font-weight: 800;
     line-height: 86px;
 }
 
 .hero__describe {
     max-width: 50%;
     margin-top: 20px;
-    letter-spacing: -.014em;
+    letter-spacing: -.003em;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 29px;
 }
 
@@ -30,11 +30,11 @@
     margin-top: 96px;
     margin-left: 2px;
     transition: background-color .3s ease;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.05em;
     color: white;
     background-color: #f90;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .hero__button:hover,
