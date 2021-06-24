@@ -16,6 +16,7 @@
 }
 
 .footerAbout__logo {
+    margin-bottom: 18px;
     transition: filter .3s ease;
 }
 
@@ -28,7 +29,7 @@
 }
 
 .footerMenu__list {
-    margin-top: 18px;
+    margin-bottom: 114px;
 }
 
 .footerMenu__item {
@@ -55,7 +56,6 @@
 
 .footerAbout__socialList {
     display: flex;
-    margin-top: 114px;
 }
 
 .footerAbout__socialListMobile {
@@ -98,10 +98,11 @@
 
 .footer__sendLetter {
     flex-basis: 32.5%;
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 .sendLetter__title {
+    margin-bottom: 26px;
     color: #cacaca;
 }
 
@@ -112,11 +113,18 @@
 
 .footerForm__input {
     height: 60px;
-    margin-top: 26px;
     padding: 20px;
     color: #cacaca;
     background-color: #414141;
     font-size: 18px;
+}
+
+.footerForm__input:not(:last-child) {
+    margin-bottom: 26px;
+}
+
+textarea.footerForm__input:last-of-type {
+    margin-bottom: 31px;
 }
 
 .footerTextarea {
@@ -131,7 +139,7 @@
 
 .footerForm__submitBlock {
     display: flex;
-    margin: 31px 0 0 3px;
+    padding-left: 3px;
 }
 
 .footerForm__btn {
@@ -194,10 +202,14 @@
     background-image: url("../img/gdpr.svg");
 }
 
+.footer__footerAbout {
+    display: flex;
+    justify-content: flex-end;
+    padding: 78px 0 0 0;
+}
+
 .footerAbout__describe {
     width: 68%;
-    margin-top: 78px;
-    margin-left: auto;
     line-height: 2em;
 }
 

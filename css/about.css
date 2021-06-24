@@ -1,14 +1,14 @@
 .about {
-    margin-top: 106px;
+    margin-bottom: 105px;
 }
 
 .about__title {
-    margin-left: 2px;
+    margin: 0 0 27px 2px;
 }
 
 .about__text {
     max-width: 69.5%;
-    margin-top: 27px;
+    margin-bottom: 43px;
     line-height: 32px;
 }
 
@@ -18,13 +18,11 @@
     height: 16px;
     margin: -2px 0 0 5px;
     vertical-align: middle;
-    background: url('../img/i_tooltip.svg') no-repeat;
-    background-size: contain;
+    background: url('../img/i_tooltip.svg') no-repeat 0 0 / contain;
 }
 
 .about__aboutMain {
     display: flex;
-    margin-top: 43px;
 }
 
 .aboutMain__aboutLinkBlock {
@@ -36,14 +34,7 @@
 }
 
 .aboutLinkBlock {
-    background: url('../img/aboutMoreBackgroundMobile.jpg') -13px 0px/103% no-repeat;
-    background-size: cover;
-}
-
-.aboutLinkBlock__img {
-    max-width: 103%;
-    height: 99.5%;
-    margin-left: -13px;
+    background: lightgray url('../img/aboutMoreBackgroundMobile.jpg') no-repeat -13px 0 / cover;
 }
 
 .aboutLinkBlock__describeBox {
@@ -98,23 +89,22 @@
     flex-direction: column;
     justify-content: center;
     height: 295px;
-    padding: 4px 0 0 15.5vw;
+    padding: 7px 0 0 15.5vw;
     border: 1px solid #CACACA;
 }
 
 .cardItem:first-child {
     margin-bottom: 30px;
-    background: url('../img/aboutIcon-1.svg') no-repeat;
-    background-position: 3.2vw 60px;
+    background: url('../img/aboutIcon-1.svg') no-repeat 3.2vw 60px / 22.6%;
 }
 
 .cardItem:last-child {
     padding-top: 6px;
-    background: url('../img/aboutIcon-2.svg') no-repeat;
-    background-position: 3.2vw 56px;
+    background: url('../img/aboutIcon-2.svg') no-repeat 3.2vw 56px / 20.5%;
 }
 
 .cardItem__firstSentence {
+    margin-bottom: 6px;
     letter-spacing: .01em;
     font-size: 24px;
     font-weight: 700;
@@ -122,7 +112,6 @@
 
 .cardItem__describe {
     width: 75%;
-    margin-top: 5px;
     line-height: 2em;
 }
 
@@ -202,7 +191,7 @@
     }
     .cardItem:last-child {
         padding-top: 0;
-        background: url('../img/aboutIcon-2_Mobile02.svg') 162px 62px no-repeat, url('../img/aboutIcon-2_Mobile01.svg') 111px 95px no-repeat;
+        background: url('../img/aboutIcon-2_Mobile02.svg') no-repeat 162px 62px / 15%, url('../img/aboutIcon-2_Mobile01.svg') no-repeat 111px 95px / 15%;
     }
     .cardItem__title {
         letter-spacing: -.012em;

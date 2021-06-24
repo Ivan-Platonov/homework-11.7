@@ -1,5 +1,5 @@
 .faq {
-    margin: 8rem 0 6.2rem .1rem;
+    margin: 0 0 6.2rem .1rem;
 }
 
 .faq__title {
@@ -8,7 +8,7 @@
 
 .faq__list,
 .faq>hr {
-    margin-left: 4px;
+    padding-left: 4px;
 }
 
 .faq__item {

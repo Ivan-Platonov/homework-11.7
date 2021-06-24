@@ -1,13 +1,15 @@
 .hero {
     height: 620px;
+    margin-bottom: 106px;
     padding-left: 78px;
     color: white;
-    background: url('../img/heroBackground_full.jpg') no-repeat;
+    background: rgb(83, 145, 187) url('../img/heroBackground_full.jpg') no-repeat center center / cover;
 }
 
 .hero__title {
     max-width: 50%;
     margin: 0;
+    margin-bottom: 20px;
     padding-top: 103px;
     letter-spacing: .036em;
     font-size: 67px;
@@ -17,7 +19,7 @@
 
 .hero__describe {
     max-width: 50%;
-    margin-top: 20px;
+    margin-bottom: 96px;
     letter-spacing: -.003em;
     font-size: 24px;
     font-weight: 700;
@@ -27,7 +29,6 @@
 .hero__button {
     width: 280px;
     height: 80px;
-    margin-top: 96px;
     margin-left: 2px;
     transition: background-color .3s ease;
     letter-spacing: 0.05em;

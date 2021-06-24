@@ -24,7 +24,7 @@
 .header__nav {
     display: flex;
     align-items: center;
-    margin-top: 5px;
+    padding-top: 5px;
 }
 
 .nav__list {
@@ -46,8 +46,7 @@
 
 .nav__itemLink:hover,
 .nav__itemLink:focus {
-    background: url('../img/linkHover.svg') repeat-x;
-    background-position: 0 35px;
+    background: url('../img/linkHover.svg') repeat-x 0 35px;
 }
 
 .nav__itemLink:active {
@@ -60,9 +59,7 @@
     height: 40px;
     margin-right: 5px;
     transition: background-image .1s ease;
-    background: url('../img/Search.svg') no-repeat;
-    background-position: center;
-    background-size: 25px;
+    background: url('../img/Search.svg') no-repeat center center / 25px;
 }
 
 .header__searchButton:hover,
@@ -78,13 +75,15 @@
     display: none;
     width: 30px;
     height: 23px;
-    transition: background .3s ease;
-    background: url('../img/burger_line.svg') center top no-repeat, url('../img/burger_line.svg') center center no-repeat, url('../img/burger_line.svg') center bottom no-repeat;
+    transition-timing-function: ease;
+    transition-duration: .3s;
+    transition-property: background-image, background-position;
+    background: url('../img/burger_line.svg') no-repeat center top, url('../img/burger_line.svg') no-repeat center center, url('../img/burger_line.svg') no-repeat center bottom;
 }
 
 .nav__burger:hover,
 .nav__burger:focus {
-    background: url('../img/burger_line_hover.svg') center top no-repeat, url('../img/burger_line_hover.svg') 5px center no-repeat, url('../img/burger_line_hover.svg') 10px bottom no-repeat;
+    background: url('../img/burger_line_hover.svg') no-repeat center top, url('../img/burger_line_hover.svg') no-repeat 5px center, url('../img/burger_line_hover.svg') no-repeat 10px bottom;
 }
 
 @media (min-width:1025px) and (max-width:1919px) {
@@ -104,9 +103,6 @@
     .header__logo {
         max-width: 150px;
         margin-top: 5px;
-    }
-    .header__logo:focus {
-        filter: drop-shadow(0 0 3px rgba(255, 153, 0, 0.6));
     }
     .header__nav {
         margin-top: 1px;
