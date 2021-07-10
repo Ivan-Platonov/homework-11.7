@@ -1,212 +1,323 @@
 .ourWork {
-    margin-bottom: 48px;
+	margin-bottom: 46px;
 }
 
 .ourWork__title {
-    margin-left: -2px;
+	margin: 0 0 47px -2px;
 }
 
 .ourWork__workNav {
-    padding-top: 56px;
+	margin-bottom: 40px;
 }
 
 .workNav__list {
-    display: flex;
+	display: flex;
 }
 
-.workNav__item {
-    margin-right: 90px;
+.workNav__item:not(:last-child) {
+	margin-right: 49px;
 }
 
 .workNav__link {
-    transition: color .3s ease;
-    font-size: 18px;
+	transition: color .3s ease;
+
+	font-size: 18px;
+	width: 5em;
+	height: 2em;
+	text-align: start;
 }
 
 .workNav__link:hover,
 .workNav__link:focus {
-    color: #f90;
+	color: #f90;
 }
 
 .workNav__link:active {
-    color: #E1670E;
+	color: #E1670E;
 }
 
 .workNav__item:first-child>.workNav__link {
-    color: #f90;
-}
-
-.ourWork__workContent {
-    padding-top: 49px;
+	color: #f90;
 }
 
 .workContent__consult {
-    display: flex;
-    justify-content: space-between;
-    transition: opacity 1s ease;
+	display: flex;
+	justify-content: space-between;
+
+	transition: opacity 1s ease;
 }
 
 .workContent__contentTitle {
-    margin: 2px 0 7px 0;
-    letter-spacing: .01em;
-    font-size: 24px;
+	margin: 2px 0 7px 0;
+
+	letter-spacing: .01em;
+
+	font-size: 24px;
 }
 
 .workContent__content {
-    flex-basis: 43%;
-    margin-left: 2px;
+	flex-basis: 43%;
+
+	height: 100%;
+	margin-left: 2px;
+}
+
+.workContent__content::after {
+	display: block;
+	visibility: hidden;
+
+	width: 100%;
+	height: 90px;
+
+	content: '';
 }
 
 .workContent__consult::after {
-    flex-basis: 49%;
-    height: 29rem;
-    margin-top: 9px;
-    content: '';
+	flex-basis: 49%;
+
+	min-height: 29.6rem;
+
+	content: '';
 }
 
 .workContent__consult_backimg_firstSlide::after {
-    background: url('../img/ourWork.jpg') no-repeat 0 0 / cover;
+	background: url('../img/ourWork.jpg') no-repeat -3px 8px / 101%;
 }
 
 .workContent__consult_backimg_secondSlide::after {
-    background: url('../img/ourWork_02.jpg') no-repeat right 9px / cover;
+	background: url('../img/ourWork_02.jpg') no-repeat right 9px / cover;
 }
 
 .workContent__consult_backimg_thirdSlide::after {
-    background: url('../img/ourWork_03.jpg') no-repeat right 9px / cover;
+	background: url('../img/ourWork_03.jpg') no-repeat right 9px / cover;
 }
 
 .workContent__consult_backimg_fourthSlide::after {
-    background: url('../img/ourWork_04.jpg') no-repeat right 9px / cover;
+	background: url('../img/ourWork_04.jpg') no-repeat right 9px / cover;
 }
 
 .workContent__describe {
-    line-height: 2em;
+	line-height: 2em;
 }
 
 .workContent__consult-hidden {
-    line-height: 1em;
+	line-height: 1em;
 }
 
 .workContent__more {
-    position: relative;
-    top: -3.8rem;
+	position: relative;
+	top: -3.8rem;
+
+	max-width: 50%;
+	padding-left: 2px;
 }
 
 .workContent__moreLink,
 .workContent__contract {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 175px;
-    height: 59px;
-    margin: 0 23px 0 2px;
-    transition: background-color .3s ease, color .3s ease;
-    color: white;
-    /* border: 3px solid #f90; */
-    font-weight: 700;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 22px 39px;
+
+	transition: background-color .3s ease, color .3s ease;
+
+	color: white;
+
+	font-weight: 700;
 }
 
 .workContent__moreLink {
-    background-color: #f90;
+	margin-right: 23px;
+
+	background-color: #f90;
 }
 
 .workContent__moreLink:hover,
 .workContent__moreLink:focus {
-    background-color: rgba(255, 153, 0, 0.6);
+	background-color: rgba(255, 153, 0, 0.6);
 }
 
 .workContent__moreLink:active {
-    background-color: #E1670E;
+	background-color: #E1670E;
 }
 
 .workContent__contract {
-    width: 150px;
-    color: #333;
-    border: 1px solid #333;
-    font-weight: normal;
+	padding: 22px 37px;
+
+	color: #333;
+	border: 1px solid #333;
+
+	font-weight: normal;
 }
 
 .workContent__contract:hover,
 .workContent__contract:focus {
-    color: white;
-    background-color: #666;
+	color: white;
+	background-color: #666;
 }
 
 .workContent__contract:active {
-    background-color: #000;
+	background-color: #000;
 }
 
 .workContent__img {
-    display: block;
-    width: 45.24vw;
-    margin: 10px -2px 0 0;
-    object-fit: cover;
+	display: block;
+
+	width: 45.24vw;
+	margin: 10px -2px 0 0;
+
+	object-fit: cover;
 }
 
 .workContent__img-mobile {
-    display: none;
+	display: none;
 }
 
-@media (min-width:768px) and (max-width:1024px) {
-    .ourWork {
-        margin-top: 61px;
-    }
-    .workContent__img {
-        display: none;
-    }
-    .workContent__content {
-        flex-basis: 47.3%;
-    }
-    .workContent__consult_backimg_firstSlide::after {
-        background: url('../img/ourWorkMobile.jpg') no-repeat right;
-    }
-    .workContent__consult_backimg_secondSlide::after {
-        background: url('../img/ourWorkMobile.jpg') no-repeat right;
-    }
-    .workContent__consult_backimg_thirdSlide::after {
-        background: url('../img/ourWorkMobile.jpg') no-repeat right;
-    }
-    .workContent__consult_backimg_fourthSlide::after {
-        background: url('../img/ourWorkMobile.jpg') no-repeat right;
-    }
-    .ourWork__title {
-        margin-left: -6px;
-    }
-    .ourWork__stepLine {
-        overflow: hidden;
-        width: 469px;
-        height: 3px;
-        margin-top: 38px;
-        background-color: #cacaca;
-    }
-    .ourWork__stepLineProgress {
-        width: 469px;
-        height: 3px;
-        transform: translateX(-422px);
-        background-color: #f90;
-    }
-    .workNav__list {
-        margin-top: 10px;
-    }
-    .workNav__item {
-        margin-right: 89px;
-    }
-    .workContent__consult {
-        margin-top: 48px;
-    }
-    .workContent__contentTitle {
-        letter-spacing: -.01em;
-    }
-    .workContent__describe {
-        margin-top: 6px;
-    }
-    .workContent__moreLink,
-    .workContent__contract {
-        height: 60px;
-        margin: 29px 26px 0 0;
-    }
-    .workContent__contract {
-        width: 147px;
-    }
+
+@media (min-width:1200px) and (max-width:1399px) {
+
+}
+
+@media (max-width:1199px) {
+	.ourWork {
+		margin-bottom: 0;
+	}
+	.ourWork__title {
+		margin-left: -6px;
+	}
+	.workNav__item:not(:last-child) {
+		margin-right: 49px;
+	}
+	.ourWork__workContent {
+		margin-left: -2px;
+	}
+	.workContent__content {
+		flex-basis: 47.2%;
+	}
+	.workContent__consult::after {
+		flex-basis: 47.2%;
+
+		height: auto;
+
+		background-size: cover;
+	}
+	
+	.workContent__more {
+		top: -3.85rem;
+
+		max-width: 50%;
+		padding-left: 0;
+	}
+
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+	.workContent__consult_backimg_firstSlide::after {
+		background-image: url(../img/ourWorkMobile.jpg);
+	}
+	.workNav__item:nth-child(3) .workNav__link {
+		text-align: start;
+	}
+	.workNav__item:last-child .workNav__link {
+		text-align: start;
+	}
+}
+
+@media (max-width:991px) {
+	.workNav__list {
+    justify-content: space-between;
+	}
+	.workNav__item:not(:last-child) {
+		margin-right: 0;
+	}
+	.workNav__item:nth-child(2) .workNav__link {
+		padding-left: 12px;
+	}
+	.workNav__item:nth-child(3) .workNav__link {
+		text-align: center;
+    padding-left: 9px;
+	}
+	.workNav__item:last-child .workNav__link {
+		text-align: end;
+	}
+	.workContent__consult {
+    flex-direction: column-reverse;
+	}
+	.ourWork__workNav {
+    margin-bottom: 38px;
+	}
+	.workContent__consult::after {
+    min-height: 17.7rem;
+		margin-bottom: 42px;
+	}
+	.workContent__more {
+    max-width: 70%;
+	}
+	.workContent__consult::after {
+    background-position: 2px -37px;
+	}
+}
+
+@media (max-width:767px) {
+
+}
+
+@media (max-width:575px) {
+	.ourWork__title {
+		margin-bottom: 27px;
+		margin-left: 0;
+
+		font-size: 24px;
+		line-height: 29px;
+	}
+	.ourWork__workNav {
+		margin-bottom: 11px;
+	}
+	.workNav__item:nth-child(2) .workNav__link {
+    padding-left: 8px;
+	}
+	.workNav__link {
+		font-size: 14px;
+	}
+	.workContent__consult::after {
+    min-height: 10rem;
+		margin-bottom: 6px;
+
+		background-position: center;
+    background-size: 103%;
+	}
+
+	.workContent__contentTitle {
+		margin-bottom: 0;
+
+		letter-spacing: -.013em;
+
+		font-size: 18px;
+		line-height: 32px;
+	}
+	.workContent__describe  {
+		width: 101%;
+
+		font-size: 14px;
+		line-height: 28px;
+	}
+	.workContent__more {
+		top: -4.4em;
+
+    max-width: 100%;
+	}
+	.workContent__moreLink {
+		margin-right: 6px;
+		padding: 13px 44px;
+
+    font-size: 12px;
+    line-height: 15px;
+	}
+	.workContent__contract {
+    padding: 11px 30px;
+
+		font-size: 12px;
+    line-height: 15px;
+	}
 }
