@@ -3,13 +3,9 @@
 }
 
 .faq__title {
-	margin-bottom: 42px;
+	margin-bottom: 49px;
 }
 
-.faq__list,
-.faq>hr {
-	padding-left: 4px;
-}
 
 .faq__item {
 	transition: height 0.5s ease;
@@ -131,8 +127,11 @@
 
 @media (max-width:1199px) {
 	.faq {
-		margin-top: -4px;
-		margin-bottom: 53px;
+		margin-top: 24px;
+		margin-bottom: 80px;
+	}
+	.faq__title {
+    margin-bottom: 36px;
 	}
 
 	.faq__linkText {
@@ -151,17 +150,22 @@
 @media (max-width:991px) {
 	.faq {
 		margin: 0 auto;
-		margin-bottom: 59px;
+		margin-bottom: 79px;
 	}
 	.faq__title {
-		white-space: nowrap;
-	}
+    margin-bottom: 30px;
 
-	.faq__item:first-child .faq__linkText {
+    line-height: 59px;
+	}
+	.faq__linkText_max-width-01 {
 		width: 90%;
 	}
-	.faq__item:nth-child(3) .faq__linkText {
-		width: 70%;
+	.faq__linkText_max-width-03 {
+		width: 85%;
+	}
+	.faq__linkText_max-width-04,
+	.faq__linkText_max-width-05 {
+		width: 90%;
 	}
 	.faq__item:nth-child(3) .faq__linkIcon,
 	.faq__item:last-child .faq__linkIcon {
@@ -186,10 +190,10 @@
 @media (max-width:575px) {
 	.faq {
 		margin-top: -31px;
-		margin-bottom: 38px;
+		margin-bottom: 60px;
 	}
 	.faq__title {
-		margin-bottom: 13px;
+		margin-bottom: 16px;
 
 		white-space: initial;
 
@@ -208,15 +212,15 @@
 		padding-bottom: 24px;
 	}
 	
-	.faq__item:not(:nth-child(2)) .faq__linkText {
+
+	.faq__linkText_max-width-04,
+	.faq__linkText_max-width-05 {
 		width: 85%;
 	}
-	.faq__item:first-child .faq__linkText {
-		width: 80%;
-	}
-	.faq__item:nth-child(2) .faq__linkText {
-    width: 70%;
-	}
+
+
+
+
 
 	.faq__item:nth-child(3) .faq__linkIcon, 
 	.faq__item:last-child .faq__linkIcon {

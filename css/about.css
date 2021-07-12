@@ -3,18 +3,19 @@
 }
 
 .about__title {
-	margin: 0 0 27px 2px;
+	margin-bottom: 27px;
 }
 
 .about__text {
 	max-width: 69.5%;
-	margin-bottom: 43px;
+	margin-bottom: 50px;
 
 	line-height: 32px;
 }
 
-.tooltip {
-	display: inline-block;
+/* .tooltip {
+
+	display: none;
 
 	width: 16px;
 	height: 16px;
@@ -23,7 +24,8 @@
 	vertical-align: middle;
 
 	background: url('../img/i_tooltip.svg') no-repeat 0 0 / contain;
-}
+} */
+
 
 .about__aboutMain {
 	display: flex;
@@ -52,13 +54,13 @@
 	justify-content: space-between;
 
 	min-height: 170px;
-	padding: 38px 69px 40px 54px;
+	padding: 51px 52px 49px 50px;
 
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .aboutLinkBlock__describe {
-	flex-basis: 67%;
+	flex-basis: 60%;
 
 	margin-right: 20px;
 
@@ -106,7 +108,7 @@
 	justify-content: center;
 
 	height: 295px;
-	padding: 7px 0 0 34.5%;
+	padding-left: 34.5%;
 
 	border: 1px solid #CACACA;
 }
@@ -114,17 +116,15 @@
 .cardItem:first-child {
 	margin-bottom: 30px;
 
-	background: url('../img/aboutIcon-1.svg') no-repeat 3.2vw 60px / 22.6%;
+	background: url('../img/aboutIcon-1.svg') no-repeat 3vw 63px / 22%;
 }
 
 .cardItem:last-child {
-	padding-top: 6px;
-
-	background: url('../img/aboutIcon-2.svg') no-repeat 3.2vw 56px / 20.5%;
+	background: url('../img/aboutIcon-2.svg') no-repeat 3vw 66px / 22%;
 }
 
 .cardItem__firstSentence {
-	margin-bottom: 6px;
+	margin-bottom: 10px;
 
 	letter-spacing: .01em;
 
@@ -145,18 +145,19 @@
 
 @media (max-width:1199px) {
 	.about {
-		margin-bottom: 64px;
+		margin-bottom: 86px;
 	}
 	.about__title {
-		margin: 0 0 31px -3px;
+		margin-bottom: 15px;
 	}
 	.about__text {
 		max-width: 100%;
-		margin-bottom: 59px;
+		margin-bottom: 61px;
 	}
-	.tooltip {
+	/* .tooltip {
+		display: none;
 		margin: -2px 5px 0 0px;
-	}
+	} */
 	.about__aboutMain {
 		flex-direction: column;
 	}
@@ -165,57 +166,61 @@
 
 		min-height: 640px;
 		margin-right: 0;
-		margin-bottom: 50px;
+		margin-bottom: 33px;
 
 		background-position-x: 0;
 	}
-	.aboutLinkBlock__describeBox {
+	/* .aboutLinkBlock__describeBox {
 		padding: 38px 50px 40px 44px;
-	}
+	} */
 	.aboutLinkBlock__describe {
 		flex-basis: 60%;
 	}
 	.cardItem {
-		padding: 4px 0 0 37.7%;
+		padding-left: 34.2%;
 	}
 	.cardItem:first-child {
-		margin-bottom: 40px;
+		margin-bottom: 32px;
 
-		background-position: 10.8vw 63px;
-		background-size: 21.3%;
+		background-position: 76px 64px;
+    background-size: 20.5%;
 	}
 	.cardItem:last-child {
-		background-position: 10.8vw 62px;
-		background-size: 19.3%;
+		background-position: 76px 65px;
+    background-size: 20.6%;
 	}
 }
 
 @media (max-width:991px) {
 	.aboutLinkBlock {
 		min-height: 650px;
-		margin-bottom: 40px;
+		margin-bottom: 32px;
 
 		background-image: url("../img/aboutMoreBackgroundMobile768.jpg");
 	}
+	.about__text {
+    margin-bottom: 60px;
+	}
+
 	.aboutLinkBlock__describeBox {
-    padding: 25px 29px 25px 29px;
+		padding: 34px 40px 34px 40px;
 	}
 	.aboutLinkBlock__describe {
-		flex-basis: 65%;
+		flex-basis: 62%;
 
-		line-height: 1.95em;
+		line-height: 2em;
 	}
 	.cardItem {
 		height: 235px;
-		padding-left: 26.5%;
+		padding-left: 25.3%;
 	}
 	.cardItem:first-child {
-		background-position: 30px 64px;
-		background-size: 19.6%;
+		background-position: 39px 67px;
+    background-size: 17.1%;
 	}
 	.cardItem:last-child {
-		background-position: 30px 67px;
-    background-size: 17.4%;
+		background-position: 39px 68px;
+    background-size: 17.1%;
 	}
 	
 	.cardItem__describe {
@@ -238,16 +243,16 @@
 
 @media (max-width:575px) {
 	.about {
-		margin-bottom: 47px;
+		margin-bottom: 59px;
 	}
 	.about__title {
-		margin-bottom: 1px;
+		margin-bottom: 20px;
 
 		font-size: 24px;
 		line-height: 29px;
 	}
 	.about__text {
-		margin-bottom: 11px;
+		margin-bottom: 14px;
 
     font-size: 14px;
     line-height: 28px;
@@ -282,7 +287,7 @@
 	.aboutLinkBlock__describe {
     flex-basis: 65%;
 
-		margin-bottom: 10px;
+		margin-bottom: 8px;
 		margin-left: -1px;
 
 		letter-spacing: normal;
@@ -310,20 +315,21 @@
 
 	.cardItem {
 		height: auto;
-		padding-top: 31.5%;
+		padding-top: 29%;
 		padding-left: 0;
 
 		border: none;
 	}
 
 	.cardItem:first-child {
-		margin-bottom: 3px;
+		margin-bottom: 13px;
 
-    background-position: -1px 25px;
-    background-size: 24.3%;
+		background: url('../img/aboutIcon-1_320.svg') no-repeat left 23px / 22.3%;
 	}
 	.cardItem:last-child {
-		padding-top: 30%;
+		padding-top: 27.6%;
+
+		background: url('../img/aboutIcon-2_320.svg') no-repeat left 23px / 22.3%;
 	}
 
 	.cardItem:last-child {

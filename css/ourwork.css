@@ -1,9 +1,9 @@
 .ourWork {
-	margin-bottom: 46px;
+	margin-bottom: 42px;
 }
 
 .ourWork__title {
-	margin: 0 0 47px -2px;
+	margin-bottom: 47px;
 }
 
 .ourWork__workNav {
@@ -15,16 +15,17 @@
 }
 
 .workNav__item:not(:last-child) {
-	margin-right: 49px;
+	margin-right: 45px;
 }
 
 .workNav__link {
-	transition: color .3s ease;
-
-	font-size: 18px;
 	width: 5em;
 	height: 2em;
+
+	transition: color .3s ease;
 	text-align: start;
+
+	font-size: 18px;
 }
 
 .workNav__link:hover,
@@ -48,7 +49,7 @@
 }
 
 .workContent__contentTitle {
-	margin: 2px 0 7px 0;
+	margin: 2px 0 13px 0;
 
 	letter-spacing: .01em;
 
@@ -73,9 +74,9 @@
 }
 
 .workContent__consult::after {
-	flex-basis: 49%;
+	flex-basis: 49.1%;
 
-	min-height: 29.6rem;
+	min-height: 29.3rem;
 
 	content: '';
 }
@@ -109,7 +110,6 @@
 	top: -3.8rem;
 
 	max-width: 50%;
-	padding-left: 2px;
 }
 
 .workContent__moreLink,
@@ -183,11 +183,11 @@
 	.ourWork {
 		margin-bottom: 0;
 	}
-	.ourWork__title {
-		margin-left: -6px;
+	.ourWork__workNav {
+    margin-bottom: 47px;
 	}
 	.workNav__item:not(:last-child) {
-		margin-right: 49px;
+		margin-right: 45px;
 	}
 	.ourWork__workContent {
 		margin-left: -2px;
@@ -204,10 +204,16 @@
 	}
 	
 	.workContent__more {
-		top: -3.85rem;
+		top: -61px;
 
 		max-width: 50%;
 		padding-left: 0;
+	}
+	.workContent__moreLink {
+    margin-right: 27px;
+	}
+	.workContent__content::after {
+    height: 83px;
 	}
 
 }
@@ -225,6 +231,9 @@
 }
 
 @media (max-width:991px) {
+	.ourWork {
+    margin-bottom: 19px;
+	}
 	.workNav__list {
     justify-content: space-between;
 	}
@@ -235,8 +244,9 @@
 		padding-left: 12px;
 	}
 	.workNav__item:nth-child(3) .workNav__link {
-		text-align: center;
     padding-left: 9px;
+
+		text-align: center;
 	}
 	.workNav__item:last-child .workNav__link {
 		text-align: end;
@@ -245,7 +255,7 @@
     flex-direction: column-reverse;
 	}
 	.ourWork__workNav {
-    margin-bottom: 38px;
+    margin-bottom: 43px;
 	}
 	.workContent__consult::after {
     min-height: 17.7rem;
@@ -264,8 +274,11 @@
 }
 
 @media (max-width:575px) {
+	.ourWork {
+    margin-bottom: 20px;
+	}
 	.ourWork__title {
-		margin-bottom: 27px;
+		margin-bottom: 16px;
 		margin-left: 0;
 
 		font-size: 24px;
@@ -282,14 +295,14 @@
 	}
 	.workContent__consult::after {
     min-height: 10rem;
-		margin-bottom: 6px;
+		margin-bottom: 13px;
 
 		background-position: center;
     background-size: 103%;
 	}
 
 	.workContent__contentTitle {
-		margin-bottom: 0;
+		margin-bottom: 8px;
 
 		letter-spacing: -.013em;
 
@@ -298,6 +311,7 @@
 	}
 	.workContent__describe  {
 		width: 101%;
+		margin-bottom: 3px;
 
 		font-size: 14px;
 		line-height: 28px;

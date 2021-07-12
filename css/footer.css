@@ -1,5 +1,5 @@
 .footer {
-	padding-top: 49px;
+	padding-top: 50px;
 
 	color: #CACACA;
 	background-color: #333;
@@ -9,7 +9,7 @@
 	display: flex;
 	justify-content: space-between;
 
-	padding-bottom: 75px;
+	padding-bottom: 44px;
 }
 
 .footer__footerAbout {
@@ -17,7 +17,7 @@
 }
 
 .footerAbout__logo {
-	margin-bottom: 18px;
+	margin-bottom: 26px;
 
 	transition: filter .3s ease;
 }
@@ -31,7 +31,7 @@
 }
 
 .footerMenu__list {
-	margin-bottom: 114px;
+	margin-bottom: 100px;
 }
 
 .footerMenu__item:not(:last-child) {
@@ -104,7 +104,7 @@
 .footer__sendLetter {
 	flex-basis: 32.5%;
 
-	padding-top: 15px;
+	padding-top: 6px;
 }
 
 .sendLetter__title {
@@ -133,7 +133,7 @@
 }
 
 textarea.footerForm__input:last-of-type {
-	margin-bottom: 30px;
+	margin-bottom: 33px;
 }
 
 .footerTextarea {
@@ -152,7 +152,7 @@ textarea.footerForm__input:last-of-type {
 .footerForm__submitBlock {
 	display: flex;
 
-	padding-left: 3px;
+	padding-left: 4px;
 }
 
 .footerForm__btn {
@@ -226,7 +226,7 @@ textarea.footerForm__input:last-of-type {
 	display: flex;
 	justify-content: flex-end;
 
-	padding: 78px 0 0 0;
+	padding: 87px 0 0 0;
 }
 
 .footerAbout__describe {
@@ -242,19 +242,29 @@ textarea.footerForm__input:last-of-type {
 
 @media (max-width:1199px) {
 	.footer {
-		padding-top: 47px;
+		padding-top: 50px;
 	}
 	.footer__footerAbout {
 		display: none;
 	}
 	.footer__sendLetter {
-		flex-basis: 58.2%;
-
-		padding-top: 16px;
+		flex-basis: 58.6%;
+	}
+	.sendLetter__title {
+    margin-bottom: 30px;
+	}
+	.footerForm__input::placeholder {
+    padding-left: 5px;
+	}
+	.footerForm__submitBlock {
+		padding-left: 0;
+	}
+	textarea.footerForm__input:last-of-type {
+    margin-bottom: 30px;
 	}
 	.footerForm__btn {
-		margin-right: 14px;
-		padding: 22px 41px;
+		margin-right: 21px;
+		padding: 21px 41px;
 
 		white-space: nowrap;
 	}
@@ -264,27 +274,27 @@ textarea.footerForm__input:last-of-type {
 }
 
 @media (max-width:991px) {
-
+	.footer {
+    padding-top: 40px;
+	}
 	.footer__container {
     flex-direction: column-reverse;
 
-		padding-bottom: 54px;
+		padding-bottom: 45px;
 	}
 	.footerMenu__list {
     display: none;
 	}
 	.footer__sendLetter {
-		margin-bottom: 57px;
+		margin-bottom: 48px;
     padding-top: 18px;
 	}
 	.footerAbout__logo {
     margin-bottom: 13px;
 	}
-	.sendLetter__title {
-    margin-left: -3px;
-	}
+	
 	.footer__footerForm {
-    max-width: 80%;
+    max-width: 81%;
 	}
 	.footerForm__input::placeholder {
     padding-left: 5px;
@@ -301,10 +311,10 @@ textarea.footerForm__input:last-of-type {
 
 @media (max-width:575px) {
 	.footer {
-    padding-top: 21px;
+    padding-top: 15px;
 	}
 	.footer__container {
-    padding-bottom: 24px;
+    padding-bottom: 32px;
 	}
 	.sendLetter__title {
     font-size: 24px;
@@ -336,9 +346,11 @@ textarea.footerForm__input:last-of-type {
     font-size: 13px;
 	}
 	.footerForm input[type=checkbox]+label {
-		padding-left: 5px;
+		margin: 0 auto;
 	}
-
+	.footer__sendLetter {
+    margin-bottom: 40px;
+	}
 	.footerAbout__logo {
     display: block;
 
@@ -347,20 +359,20 @@ textarea.footerForm__input:last-of-type {
     margin-bottom: 13px;
 	}
 	.footerAbout__socialList {
-    width: 54%;
-		margin-right: auto;
-    margin-left: 27%;
+		justify-content: center;
+
+    width: auto;
 		padding-top: 3px;
 	}
 	.footerAbout__socialItem {
-    width: 49px;
+    width: 56px;
     margin-right: 0;
 	}
 	.footerAbout__socialFB, 
 	.footerAbout__socialVK, 
 	.footerAbout__socialINST {
-    width: 35px;
-		height: 35px;
+    width: 40px;
+		height: 40px;
 
     background-size: contain;
 	}
