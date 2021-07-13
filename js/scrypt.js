@@ -34,6 +34,11 @@ window.onload = function() {
 	function mobileMenuSwitcher() {
 		mobileMenuBurgerButton.addEventListener("click", function() {
 			openMobileMenu();
+			document.body.addEventListener("click", function(e) {
+					if (e.target !== mobileMenu && e.target !== mobileMenuBurgerButton) {
+						closeMobileMenu();
+					}
+			});
 		});
 
 		mobileMenuCloseButton.addEventListener("click", function() {
