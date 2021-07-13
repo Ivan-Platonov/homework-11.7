@@ -37,12 +37,11 @@ window.onload = function() {
 			document.body.addEventListener("click", function(e) {
 					if (e.target !== mobileMenu && e.target !== mobileMenuBurgerButton) {
 						closeMobileMenu();
-					}
+					};
+					if (e.target == mobileMenuCloseButton) {
+						closeMobileMenu();
+					};
 			});
-		});
-
-		mobileMenuCloseButton.addEventListener("click", function() {
-			closeMobileMenu();
 		});
 
 		function openMobileMenu() {
