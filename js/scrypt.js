@@ -67,7 +67,12 @@ document.addEventListener("DOMContentLoaded", function() {
 	function ourWorksTabs() {
 		tabs.forEach(function(tab) {
 			tab.addEventListener('click', function(e) {
-				document.querySelector(`[data-tabButtonNumber="tab-01"]`).classList.remove('workNav__link_active');
+
+				tabs.forEach(function(tab) {
+					tab.classList.remove('workNav__link_active');
+				})
+				e.currentTarget.classList.add('workNav__link_active');
+
 				const path = e.currentTarget.dataset.tabbuttonnumber;
 				tabsContent.forEach(function(tabContent) {
 					tabContent.classList.remove('workContent__consult_active');
