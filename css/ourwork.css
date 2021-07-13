@@ -37,9 +37,12 @@
 	color: #E1670E;
 }
 
-.workNav__item:first-child>.workNav__link {
+.workNav__link_active {
 	color: #f90;
 }
+/* .workNav__item:first-child>.workNav__link {
+	color: #f90;
+} */
 
 .workContent__consult {
 	display: flex;

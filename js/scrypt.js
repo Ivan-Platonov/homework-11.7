@@ -61,14 +61,14 @@ document.addEventListener("DOMContentLoaded", function() {
 	//------------------------------------------------------------------------------
 	let tabsContent = document.querySelectorAll('.workContent__consult');
 	let tabs = document.querySelectorAll('.workNav__link');
-	let workContentDescribe = document.querySelectorAll('.workContent__describe');
+	// let workContentDescribe = document.querySelectorAll('.workContent__describe');
 
 
 	function ourWorksTabs() {
 		tabs.forEach(function(tab) {
 			tab.addEventListener('click', function(e) {
+				document.querySelector(`[data-tabButtonNumber="tab-01"]`).classList.remove('workNav__link_active');
 				const path = e.currentTarget.dataset.tabbuttonnumber;
-				console.log(path);
 				tabsContent.forEach(function(tabContent) {
 					tabContent.classList.remove('workContent__consult_active');
 				})
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	// };
 
 
-	
+
 	//------------------------------------------------------------------------------
 	//The accordian function block 
 	//------------------------------------------------------------------------------
