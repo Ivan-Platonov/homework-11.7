@@ -63,6 +63,14 @@
 	margin-left: 2px;
 }
 
+.workContent__consult {
+	display: none;
+}
+
+.workContent__consult_active {
+	display: flex;
+}
+
 .workContent__content::after {
 	display: block;
 	visibility: hidden;

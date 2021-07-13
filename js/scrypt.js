@@ -65,40 +65,54 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 	function ourWorksTabs() {
-		let i = 0;
-		// recieve 1 in function (i = 1) because the content of the first tab (0 index in the array) must be visible
-		hideTabsContent(1);
-
-		document.querySelector('.workNav__list').onclick = function(event) {
-			let target = event.target;
-			if (target.classList.contains('workNav__link')) {
-				for (i = 0; i < tabs.length; i++) {
-					if (target == tabs[i]) {
-						// hide the content of the all tabs
-						hideTabsContent(0);
-						//show the content of the clicked tab (with index i when target = tabs[i])
-						showTabsContent(i);
-						break;
-					};
-				};
-			};
-		};
+		tabs.forEach(function(tab) {
+			tab.addEventListener('click', function(e) {
+				const path = e.currentTarget.dataset.tabbuttonnumber;
+				console.log(path);
+				tabsContent.forEach(function(tabContent) {
+					tabContent.classList.remove('workContent__consult_active');
+				})
+				document.querySelector(`[data-target="${path}"]`).classList.add('workContent__consult_active');
+			})
+		})
 	};
+	// function ourWorksTabs() {
+		// let i = 0;
+		// // recieve 1 in function (i = 1) because the content of the first tab (0 index in the array) must be visible
+		// hideTabsContent(1);
 
-	function hideTabsContent(tabIndex) {
-		for (i = tabIndex; i < tabsContent.length; i++) {
-			tabsContent[i].classList.add('visually-hidden');
-			tabsContent[i].style.opacity = '0';
-			workContentDescribe[i].classList.add('workContent__consult-hidden');
-		};
-	};
+		// document.querySelector('.workNav__list').onclick = function(event) {
+		// 	let target = event.target;
+		// 	if (target.classList.contains('workNav__link')) {
+		// 		for (i = 0; i < tabs.length; i++) {
+		// 			if (target == tabs[i]) {
+		// 				// hide the content of the all tabs
+		// 				hideTabsContent(0);
+		// 				//show the content of the clicked tab (with index i when target = tabs[i])
+		// 				showTabsContent(i);
+		// 				break;
+		// 			};
+		// 		};
+		// 	};
+		// };
+	// };
 
-	function showTabsContent(tabIndex) {
-		tabsContent[tabIndex].classList.remove('visually-hidden');
-		tabsContent[tabIndex].style.opacity = '1';
-		workContentDescribe[tabIndex].classList.remove('workContent__consult-hidden');
-	};
+	// function hideTabsContent(tabIndex) {
+	// 	for (i = tabIndex; i < tabsContent.length; i++) {
+	// 		tabsContent[i].classList.add('visually-hidden');
+	// 		tabsContent[i].style.opacity = '0';
+	// 		workContentDescribe[i].classList.add('workContent__consult-hidden');
+	// 	};
+	// };
 
+	// function showTabsContent(tabIndex) {
+	// 	tabsContent[tabIndex].classList.remove('visually-hidden');
+	// 	tabsContent[tabIndex].style.opacity = '1';
+	// 	workContentDescribe[tabIndex].classList.remove('workContent__consult-hidden');
+	// };
+
+
+	
 	//------------------------------------------------------------------------------
 	//The accordian function block 
 	//------------------------------------------------------------------------------
