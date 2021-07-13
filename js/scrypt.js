@@ -1,4 +1,6 @@
-window.onload = function() {
+
+
+document.addEventListener("DOMContentLoaded", function() {
 	//------------------------------------------------------------------------------
 	//The swiper function block 
 	//------------------------------------------------------------------------------
@@ -135,4 +137,4 @@ window.onload = function() {
 	ourWorksTabs();
 	faqAccordian();
 	mobileMenuSwitcher()
-};
+});
