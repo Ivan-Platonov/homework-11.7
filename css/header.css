@@ -58,12 +58,18 @@
 
 .nav__itemLink:hover,
 .nav__itemLink:focus {
+	outline: none;
 	background: url('../img/linkHover.svg') repeat-x 0 35px;
 }
 
 .nav__itemLink:active {
 	color: #E1670E;
 }
+
+.nav__itemLink:focus-visible {
+	background: url('../img/hover_outline.svg') no-repeat center;
+}
+
 
 .header__searchButton {
 	display: inline-block;
@@ -83,6 +89,10 @@
 
 .header__searchButton:active {
 	background-image: url('../img/SearchActive.svg');
+}
+
+.header__searchButton:focus-visible {
+	background: url('../img/SearchHover.svg') no-repeat center right / 25px, url('../img/hover_outline.svg') no-repeat center;
 }
 
 .nav__burger {
@@ -182,6 +192,9 @@
 .mobileMenu__itemLink:active {
 	color: #E1670E;
 }
+
+
+
 
 @media (min-width:1200px) and (max-width:1399px) {
 

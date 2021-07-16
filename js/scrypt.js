@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		direction: 'horizontal',
 		effect: 'fade',
 		loop: true,
+		a11y: false,
 
 		autoplay: {
 			delay: 3000,
@@ -47,11 +48,13 @@ document.addEventListener("DOMContentLoaded", function() {
 		});
 
 		function openMobileMenu() {
+			mobileMenu.removeAttribute("aria-hidden");
 			mobileMenu.style.transform = "translateX(0)";
 			document.body.classList.add("stop-scrolling");
 		};
 		function closeMobileMenu() {
 			mobileMenu.style.transform = "translateX(-101%)";
+			mobileMenu.setAttribute("aria-hidden", "true");
 			document.body.classList.remove("stop-scrolling");
 		};
 	};
@@ -137,6 +140,7 @@ document.addEventListener("DOMContentLoaded", function() {
 					hideFaqsContent();
 					thisfaqlinkIcon.classList.add('faq__Icon-Rotate');
 					thisFaqContent.classList.remove('faq__hide');
+					thisFaqContent.removeAttribute("aria-hidden");
 				};
 			});
 		};
@@ -144,6 +148,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		function hideFaqsContent() {
 			for (i = 0; i < faqsContent.length; i++) {
 				faqslinkIcon[i].classList.remove('faq__Icon-Rotate');
+				faqsContent[i].setAttribute("aria-hidden", "true");
 				faqsContent[i].classList.add('faq__hide');
 			};
 		};

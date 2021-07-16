@@ -41,6 +41,22 @@ hr {
   height: 100vh;
 }
 
+.footerMenu__itemLink:focus-visible {
+	outline: none;
+}
+
+
+.focus-visible-svg:focus-visible {
+	background-image: url('../img/hover_outline.svg');
+}
+
+.focus-visible-otl:focus-visible {
+	outline: 2px solid red;
+}
+
+
+
+
 @media (min-width:1200px) and (max-width:1399px) {
 
 }

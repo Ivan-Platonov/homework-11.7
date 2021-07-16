@@ -39,6 +39,7 @@
 }
 
 .footerMenu__itemLink {
+
 	transition: color .3s ease;
 	letter-spacing: -.01em;
 
@@ -52,6 +53,8 @@
 .footerMenu__itemLink:focus {
 	color: #f90;
 }
+
+
 
 .footerMenu__itemLinkMobile {
 	display: none;
@@ -119,6 +122,7 @@
 }
 
 .footerForm__input {
+	width: 100%;
 	height: 60px;
 	padding: 20px;
 
@@ -128,12 +132,12 @@
 	font-size: 18px;
 }
 
-.footerForm__input:not(:last-child) {
+.footerForm__input {
 	margin-bottom: 26px;
 }
 
-textarea.footerForm__input:last-of-type {
-	margin-bottom: 33px;
+.footerForm__input:last-of-type {
+	margin-bottom: 30px;
 }
 
 .footerTextarea {
@@ -200,6 +204,10 @@ textarea.footerForm__input:last-of-type {
 	letter-spacing: .02em;
 }
 
+#gdpr:focus-visible+.footerForm__gdpr {
+	outline: 2px solid red;
+}
+
 .footerForm input[type=checkbox]+label:hover,
 .footerForm input[type=checkbox]+label:focus {
 	color: #f90;
@@ -234,6 +242,8 @@ textarea.footerForm__input:last-of-type {
 
 	line-height: 2em;
 }
+
+
 
 
 @media (min-width:1200px) and (max-width:1399px) {
@@ -363,6 +373,7 @@ textarea.footerForm__input:last-of-type {
 
     width: auto;
 		padding-top: 3px;
+		padding-left: 15px;
 	}
 	.footerAbout__socialItem {
     width: 56px;

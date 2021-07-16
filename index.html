@@ -30,9 +30,9 @@
     <div class="header__box container">
       <img class="header__logo" src="img/logoDark.png" alt="Евклид - проектный системы">
       <nav class="header__nav nav">
-        <a href="#" class="nav__burger"></a>
-        <div class="nav__mobileMenu mobileMenu">
-          <button class="mobileMenu__closeButton"></button>
+        <a href="#" class="nav__burger" aria-label="Открыть мобильное меню"></a>
+        <div class="nav__mobileMenu mobileMenu" aria-hidden="true" aria-label="Мобильное меню">
+          <button class="mobileMenu__closeButton" aria-label="Закрыть мобильное меню"></button>
           <ul class="mobileMenu__list">
             <li class="mobileMenu__item">
               <a href="#" class="mobileMenu__itemLink">О&nbsp;нас</a>
@@ -51,12 +51,12 @@
             </li>
           </ul>
         </div>
-        <ul class="nav__list">
+        <ul class="nav__list" aria-label="Основное меню">
           <li class="nav__item">
-            <a href="#" class="nav__itemLink">О&nbsp;нас</a>
+            <a href="#" class="nav__itemLink" aria-pressed="false">О&nbsp;нас</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__itemLink">Проекты</a>
+            <a href="#" class="nav__itemLink" aria-pressed="false">Проекты</a>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__itemLink">Этапы</a>
@@ -68,7 +68,7 @@
             <a href="#" class="nav__itemLink">Контакты</a>
           </li>
         </ul>
-        <button class="header__searchButton btn"></button>
+        <button class="header__searchButton btn focus-visible-otl" aria-label="Поиск по сайту"></button>
       </nav>
     </div>
   </header>
@@ -79,13 +79,13 @@
         <h1 class="hero__title">Проектные решения любой сложности</h1>
         <p class="hero__describe">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются
           уделом проектантов</p>
-        <button class="hero__button btn">Заказать расчёт</button>
+        <button class="hero__button btn focus-visible-otl">Заказать расчёт</button>
       </div>
 
       <div class="swiper-wrapper">
-        <div class="swiper-slide" data-slideNumber="1"></div>
-        <div class="swiper-slide" data-slideNumber="2"></div>
-        <div class="swiper-slide" data-slideNumber="3"></div>
+        <div class="swiper-slide" data-slidenumber="1"></div>
+        <div class="swiper-slide" data-slidenumber="2"></div>
+        <div class="swiper-slide" data-slidenumber="3"></div>
       </div>
 
       <div class="swiper-pagination"></div>
@@ -103,14 +103,13 @@
         участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип
         будущего проекта способствует повышению качества
         экспериментов.
-        <!-- <a href="#" class="tooltip"></a>  -->
       </p>
       <div class="about__aboutMain aboutMain">
         <div class="aboutMain__aboutLinkBlock aboutLinkBlock">
-          <article class="aboutLinkBlock__describeBox">
+          <article class="aboutLinkBlock__describeBox" aria-label="О нас">
             <h3 class="visually-hidden">Планирование</h3>
             <p class="aboutLinkBlock__describe">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.</p>
-            <a href="#" class="aboutLinkBlock__link btn">Подробнее</a>
+            <a href="#" class="aboutLinkBlock__link btn focus-visible-otl">Подробнее</a>
           </article>
         </div>
         <ul class="aboutMain__cardsList">
@@ -129,18 +128,18 @@
     <section class="ourWork container">
       <h2 class="ourWork__title title">Как мы работаем</h2>
 
-      <nav class="ourWork__workNav workNav">
+      <nav class="ourWork__workNav workNav" aria-label="Меню наши работы">
         <ul class="workNav__list">
-          <li class="workNav__item"><button class="workNav__link workNav__link_active btn" data-tabButtonNumber="tab-01">1 шаг</button></li>
-          <li class="workNav__item"><button class="workNav__link btn" data-tabButtonNumber="tab-02">2 шаг</button></li>
-          <li class="workNav__item"><button class="workNav__link btn" data-tabButtonNumber="tab-03">3 шаг</button></li>
-          <li class="workNav__item"><button class="workNav__link btn" data-tabButtonNumber="tab-04">4 шаг</button></li>
+          <li class="workNav__item"><button class="workNav__link workNav__link_active btn  focus-visible-svg" data-tabbuttonnumber="tab-01" aria-label="Первый шаг">1 шаг</button></li>
+          <li class="workNav__item"><button class="workNav__link btn  focus-visible-svg" data-tabbuttonnumber="tab-02" aria-label="Второй шаг">2 шаг</button></li>
+          <li class="workNav__item"><button class="workNav__link btn  focus-visible-svg" data-tabbuttonnumber="tab-03" aria-label="Третий шаг">3 шаг</button></li>
+          <li class="workNav__item"><button class="workNav__link btn  focus-visible-svg" data-tabbuttonnumber="tab-04" aria-label="Четвертый шаг">4 шаг</button></li>
         </ul>
       </nav>
       <ul class="ourWork__workContent workContent">
         <li class="workContent__consult workContent__consult_active workContent__consult_backimg_firstSlide" data-target="tab-01">
           <div class="workContent__content">
-            <h3 class="workContent__contentTitle">Проводим консультацию</h3>
+            <h3 class="workContent__contentTitle" aria-label="Первый шаг. Проводим консультацию">Проводим консультацию</h3>
             <p class="workContent__describe">Влечет за собой процесс внедрения и модернизации приоритизации разума над
               эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут
               объективно рассмотрены соответствующими инстанциями.
@@ -155,7 +154,7 @@
         </li>
         <li class="workContent__consult workContent__consult_backimg_secondSlide" data-target="tab-02">
           <div class="workContent__content">
-            <h3 class="workContent__contentTitle">Составляем смету</h3>
+            <h3 class="workContent__contentTitle" aria-label="Второй шаг. Составляем смету">Составляем смету</h3>
             <p class="workContent__describe">Внедрения и модернизации приоритизации разума над эмоциями. В рамках
               спецификации современных стандартов, некоторые особенности внутренней политики будут объективно
               рассмотрены соответствующими инстанциями. А также представители
@@ -167,7 +166,7 @@
         </li>
         <li class="workContent__consult workContent__consult_backimg_thirdSlide" data-target="tab-03">
           <div class="workContent__content">
-            <h3 class="workContent__contentTitle">Привлекаем подрядчиков</h3>
+            <h3 class="workContent__contentTitle" aria-label="Третий шаг. Привлекаем подрядчиков">Привлекаем подрядчиков</h3>
             <p class="workContent__describe">Идейные соображения высшего порядка, а также новая модель организационной
               деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения
               представителей целевой аудитории является четким доказательством
@@ -181,7 +180,7 @@
         </li>
         <li class="workContent__consult workContent__consult_backimg_fourthSlide" data-target="tab-04">
           <div class="workContent__content">
-            <h3 class="workContent__contentTitle">Инспектируем все этапы работ</h3>
+            <h3 class="workContent__contentTitle" aria-label="Четвертый шаг. Инспектируем все этапы работ">Инспектируем все этапы работ</h3>
             <p class="workContent__describe">Высокий уровень вовлечения представителей целевой аудитории является четким
               доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от
               дальнейших направлений развития. Разнообразный и богатый
@@ -194,8 +193,8 @@
         </li>
       </ul>
       <div class="workContent__more">
-        <a href="#" class="workContent__moreLink btn">Подробнее</a>
-        <a href="#" class="workContent__contract">Договор</a>
+        <a href="#" class="workContent__moreLink btn focus-visible-otl">Подробнее</a>
+        <a href="#" class="workContent__contract focus-visible-otl" aria-label="Заключить договор">Договор</a>
       </div>
     </section>
 
@@ -203,11 +202,11 @@
       <h2 class="faq__title title">Часто задаваемые вопросы</h2>
       <ul class="faq__list">
         <li class="faq__item">
-          <button class="faq__itemBlock btn">
+          <button class="faq__itemBlock btn focus-visible-otl">
             <span class="faq__linkText faq__linkText_max-width-01">Из чего формируется конечная стоимость проекта?</span>
             <span class="faq__linkIcon"></span>
           </button>
-          <p class="faq__itemContent">Являясь всего лишь частью общей картины, непосредственные участники технического
+          <p class="faq__itemContent" aria-hidden="true">Являясь всего лишь частью общей картины, непосредственные участники технического
             прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно
             верифицированы. Но высококачественный прототип будущего
             проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности
@@ -225,12 +224,12 @@
             свете. </p>
         </li>
         <li class="faq__item">
-          <button class="faq__itemBlock btn">
+          <button class="faq__itemBlock btn focus-visible-otl">
             <span class="faq__linkText faq__linkText_max-width-02">У меня есть свой проект. Сможем ли мы его доработать <span
                 class="faq__slesh">/</span> реализовать?</span>
             <span class="faq__linkIcon"></span>
           </button>
-          <p class="faq__itemContent">Являясь всего лишь частью общей картины, непосредственные участники технического
+          <p class="faq__itemContent" aria-hidden="true">Являясь всего лишь частью общей картины, непосредственные участники технического
             прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно
             верифицированы. Но высококачественный прототип будущего
             проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности
@@ -248,11 +247,11 @@
             свете. </p>
         </li>
         <li class="faq__item">
-          <button class="faq__itemBlock btn">
+          <button class="faq__itemBlock btn focus-visible-otl">
             <span class="faq__linkText faq__linkText_max-width-03">Я выбираю между разными компаниями. В чём ваше отличие?</span>
             <span class="faq__linkIcon"></span>
           </button>
-          <p class="faq__itemContent">Являясь всего лишь частью общей картины, непосредственные участники технического
+          <p class="faq__itemContent" aria-hidden="true">Являясь всего лишь частью общей картины, непосредственные участники технического
             прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно
             верифицированы. Но высококачественный прототип будущего
             проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности
@@ -270,12 +269,12 @@
             свете. </p>
         </li>
         <li class="faq__item">
-          <button class="faq__itemBlock btn">
+          <button class="faq__itemBlock btn focus-visible-otl">
             <span class="faq__linkText faq__linkText_max-width-04">Могу ли я делегировать вам работу <span class="faq__slesh">/</span> согласование
               с&nbsp;подрядчиком <span class="faq__slesh">/</span> организацией?</span>
             <span class="faq__linkIcon"></span>
           </button>
-          <p class="faq__itemContent">Являясь всего лишь частью общей картины, непосредственные участники технического
+          <p class="faq__itemContent" aria-hidden="true">Являясь всего лишь частью общей картины, непосредственные участники технического
             прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно
             верифицированы. Но высококачественный прототип будущего
             проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности
@@ -293,11 +292,11 @@
             свете. </p>
         </li>
         <li class="faq__item">
-          <button class="faq__itemBlock btn">
+          <button class="faq__itemBlock btn focus-visible-otl">
             <span class="faq__linkText faq__linkText_max-width-05">Могу ли я вернуть деньги на&nbsp;каком-либо из этапов работ?</span>
             <span class="faq__linkIcon"></span>
           </button>
-          <p class="faq__itemContent">Являясь всего лишь частью общей картины, непосредственные участники технического
+          <p class="faq__itemContent" aria-hidden="true">Являясь всего лишь частью общей картины, непосредственные участники технического
             прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно
             верифицированы. Но высококачественный прототип будущего
             проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности
@@ -320,8 +319,8 @@
 
   <footer class="footer">
     <div class="footer__container container">
-      <nav class="footer__footerMenu footerMenu footerAbout">
-        <img class="footerAbout__logo" src="img/logoLight.png" alt="Логотип">
+      <nav class="footer__footerMenu footerMenu footerAbout" aria-label="Нижнее меню">
+        <img class="footerAbout__logo" src="img/logoLight.png" alt="Евклид - проектный системы">
         <ul class="footerMenu__list">
           <li class="footerMenu__item">
             <a href="#" class="footerMenu__itemLink">О нас</a>
@@ -350,13 +349,13 @@
         </ul>
         <ul class="footerAbout__socialList">
           <li class="footerAbout__socialItem">
-            <a href="#" class="footerAbout__socialFB"></a>
+            <a href="#" class="footerAbout__socialFB focus-visible-otl" aria-label="Перейти на страницу Facebook"></a>
           </li>
           <li class="footerAbout__socialItem">
-            <a href="#" class="footerAbout__socialVK"></a>
+            <a href="#" class="footerAbout__socialVK focus-visible-otl" aria-label="Перейти на страницу Вконтакте"></a>
           </li>
           <li class="footerAbout__socialItem">
-            <a href="#" class="footerAbout__socialINST"></a>
+            <a href="#" class="footerAbout__socialINST focus-visible-otl" aria-label="Перейти на страницу Instagram"></a>
           </li>
         </ul>
       </nav>
@@ -365,14 +364,16 @@
         <h2 class="sendLetter__title title">Оставить заявку</h2>
         <form class="footer__footerForm footerForm" action="https://reqres.in/api/users" method="post" id="footerForm"
           name="footerForm">
-          <input type="text" name="fio" placeholder="Фамилия, имя и отчество&#42;" class="footerForm__input input">
-          <input type="email" name="email" placeholder="E-mail&#42;" class="footerForm__input input">
-          <textarea name="message" id="footerTextarea" cols="30" rows="10"
-            class="footerForm__input footerTextarea input" placeholder="Сообщение"></textarea>
+          <label class="footerForm__label visually-hidden" for="footerForm__input-fio">Введите свои данные</label>
+          <input class="footerForm__input input focus-visible-otl" id="footerForm__input-fio" type="text" name="fio" placeholder="Фамилия, имя и отчество&#42;">
+          <label class="footerForm__label visually-hidden" for="footerForm__input-email">Введите свои данные</label>
+          <input class="footerForm__input input focus-visible-otl" id="footerForm__input-email" type="email" name="email" placeholder="E-mail&#42;">
+          <label class="footerForm__label visually-hidden" for="footerTextarea">Введите свои данные</label>
+          <textarea class="footerForm__input footerTextarea input focus-visible-otl" name="message" id="footerTextarea" cols="30" rows="10" placeholder="Сообщение"></textarea>
           <div class="footerForm__submitBlock">
-            <button class="footerForm__btn btn" type="submit" form="footerForm">Отправить данные</button>
+            <button class="footerForm__btn btn  focus-visible-otl" type="submit" form="footerForm">Отправить данные</button>
             <input type="checkbox" name="gdpr" id="gdpr" class="input" checked>
-            <label for="gdpr">Согласен на обработу данных</label>
+            <label class="footerForm__gdpr" for="gdpr">Согласен на обработу данных</label>
           </div>
         </form>
       </div>
@@ -381,7 +382,6 @@
           доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить
           значение модели развития. Таким образом, консультация
           с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов. </p>
-
       </div>
     </div>
   </footer>
